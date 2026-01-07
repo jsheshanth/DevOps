@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <script src="validate.js"></script>
+</head>
+
+<body>
+
+    <form onsubmit="return validateForm()">
+		<center><h3>Registration Form</h3></center>
+        <table align="center" cellpadding="2" cellspacing="2">
+
+            <tr>
+                <td><h4>Firstname</h4></td>
+                <td><input type="text" id="fname"></td>
+            </tr>
+
+            <tr>
+                <td><h4>Middlename</h4></td>
+                <td><input type="text" id="mname"></td>
+            </tr>
+
+            <tr>
+                <td><h4>Lastname</h4></td>
+                <td><input type="text" id="lname"></td>
+            </tr>
+
+            <tr>
+                <td><h4>Course</h4></td>
+                <td>
+                    <select id="course">
+                        <option value="">Select</option>
+                        <option>CSE</option>
+                        <option>CSM</option>
+                        <option>IT</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><h4>Phone</h4></td>
+                <td>
+                    <input type="text" value="+91" size="2" readonly>
+                    <input type="text" id="phone" size="10">
+                </td>
+            </tr>
+
+            <tr>
+                <td><h4>Gender</h4></td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td><h4>Address</h4></td>
+                <td><textarea id="address" rows="5" cols="19"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><h4>Email</h4></td>
+                <td><input type="text" id="email"></td>
+            </tr>
+
+            <tr>
+                <td><h4>Password</h4></td>
+                <td><input type="password" id="password"></td>
+            </tr>
+
+            <tr>
+                <td><h4>Retype Password</h4></td>
+                <td><input type="password" id="confirm_password"></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+                <td><input type="reset" value="Reset"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
